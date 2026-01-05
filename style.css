@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;        
+  line-height: 1.6;       
+}
+
+.card p,
+.container p,
+.content p {
+  font-size: 19px;        /* khusus isi konten */
+}
+
+.card h2 {
+  font-size: 26px;        /* judul section */
+  margin-bottom: 5px;
+}
+
+
+/* HEADER */
+header {
+  background: linear-gradient(to right, #002855, #00509e);
+  color: white;
+  padding: 22px;
+  text-align: center;
+}
+
+/* NAVBAR */
+nav {
+  background: #003f7f;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 12px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* CONTAINER & CARD */
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 15px;
+}
+
+.card, .content, .form-box {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+/* GALLERY */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 260px;         
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.06);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+/* FORM */
+.form-box {
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* FOOTER */
+footer {
+  background: #002855;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* JAM */
+#jam {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #002855;
+  text-align: center;
+}
+/*contact */
+.content .card {
+  max-width: 800px;
+  margin: 5px auto;
+}
+
+
+.banner-index {
+  padding: 15px 0;
+}
+
+.banner-index img {
+  height: 60px;  
+}
+
+.banner-index .banner-text h1 {
+  font-size: 28px;
+}
+
+.banner-index .banner-text p {
+  font-size: 16px;
+}
